@@ -2,26 +2,31 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-     flex-direction: column;
+   /* box-sizing: border-box;
+    min-height: 100vh; */ 
      font-family: Arial,  sans-serif;
-    background-color:#f0f2f5;
-    display: flex;
-    min-height: 100vh;
-
+    background-color:#f0f2f5;   
 }
+.wrapper{
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+
 .main-content{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0 ;
 }
+
 .container{
     display: flex;
     justify-content: space-between;
-    width: 1000px;
-    
+    width: 1000px;    
 }
+
 .left{
     flex: 1;
     padding-right: 50px;
@@ -51,13 +56,14 @@ body{
     background: #fff;
     margin-top: 20px;
     padding: 20px;
-    width: 450px;
+    width: 350px;
     border-radius:10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) ;
     display: flex;
     flex-direction: column;
     gap: 10px;
    }
+
    .login-box input{
     padding: 12px;
     font-size: 15px;
@@ -77,12 +83,20 @@ body{
     font-size: 15px;
     text-align: center;
     color: #1877f2;
+    margin: 10px 0;
+    text-decoration: none;
    }
+
+   .forgotpw:hover{
+     text-decoration: underline;
+   }
+
    .login-box hr{
-    margin: 10px 0px ;
+    margin: 20px 0px ;
     border: none;
-    border-top: 1px solid grey;
+    border-top: 1px solid #ddd;
    }
+
    .button1{
     padding: 12px;
     font-size: 20px;
@@ -112,6 +126,7 @@ body{
     color: #1c1e21;
     text-align: center;
    }
+
    .footer{
     margin-top: 40px;
     padding: 20px;
@@ -120,8 +135,58 @@ body{
     color: #737373;
     text-align: center;
    }
-   .footer languages{
+
+      .footer .container{
+        display: flex;
+        max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;  
+    flex-direction: column;  
+    align-items: center; 
+  } 
+
+   .footer .languages{
+    display: flex;
+    flex-wrap: wrap;
+     gap: 10px;
+     justify-content: center;
     color: #65676b;
     text-decoration: none;
-    
+    font-size: 12px;
+    margin-bottom: 10px;
+
    }
+   .footer .site-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+     .footer a{
+        color: #737373;
+        text-decoration: none;
+        margin: 0 6px;
+     }
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #737373;
+    margin-top: 10px;
+}
+.hr1{
+    color: grey;
+    border: none;
+    height: 1px;
+    margin: 10px 0 ;
+
+}
+  
