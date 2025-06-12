@@ -16,3 +16,28 @@ body{
     justify-content: space-between;
     width: 1000px;
 }
+.left{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+
+}
+ .left h1{
+    color: blue;
+    font-size: 50px;
+    margin-bottom: 20px;
+ }
+  .left p{
+    font-size: 25px;
+    color: black;
+  }
+
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
